@@ -104,6 +104,7 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 - [How I Dockerized and Deployed a Flask App on AWS](https://dev.to/tanayjdev/from-zero-to-deployment-dockerizing-a-flask-postgresql-app-on-aws-20go)
 - [How I Added CI/CD to My Docker App](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
+- [How I Built 5 Linux Automation Scripts on AWS EC2](https://dev.to/tanayjdev/how-i-built-5-linux-automation-scripts-on-aws-ec2-3pk4)
 
 ---
 
