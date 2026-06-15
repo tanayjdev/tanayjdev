@@ -35,12 +35,13 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 ## Featured Projects
 
-### Flask + PostgreSQL — Dockerized Application
-- Multi-container setup with Docker Compose
-- PostgreSQL with persistent volumes + .env security
-- Health checks + auto-restart (self-healing)
-- CI pipeline with GitHub Actions — builds on every push
-- Deployed on AWS EC2 with port 80 public access
+### Flask + PostgreSQL — AWS Production Deployment (v2.0)
+- 3-tier architecture — EC2, Amazon RDS PostgreSQL, Application Load Balancer
+- Custom VPC with public and private subnets across multiple Availability Zones
+- Security Group layering — ALB → EC2 → RDS
+- CloudWatch dashboards monitoring EC2, RDS, and ALB metrics
+- IAM roles with least-privilege access
+- Dockerized Flask application with health check endpoint
 
 🔗 [tanayjdev/flask-docker-app](https://github.com/tanayjdev/flask-docker-app)
 
@@ -79,12 +80,17 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 ---
 
-## Current Focus (2026)
+## Current Focus (June 2026)
 
-- AWS Core — VPC, IAM, RDS, Load Balancer
-- Terraform — Infrastructure as Code
-- Kubernetes — Container Orchestration
-- CI/CD — GitHub Actions pipelines
+- AWS IAM — roles, policies, least privilege
+- EC2 — instances, AMIs, EBS, snapshots
+- S3 — versioning, lifecycle, static website
+- VPC — custom networking, subnets, routing
+- RDS — managed PostgreSQL deployment
+- CloudWatch — monitoring, alarms, dashboards
+- ALB — load balancing, health checks
+- Terraform — infrastructure as code intro
+- Next: Terraform deep dive + Kubernetes
 
 ---
 
@@ -102,6 +108,7 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 [![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=flat&logo=devdotto&logoColor=white)](https://dev.to/tanayjdev)
 
+- [How I Deployed a Flask App on AWS with RDS, ALB, and VPC](https://dev.to/tanayjdev/how-i-deployed-a-flask-app-on-aws-with-rds-alb-and-vpc-as-a-student-9ld)
 - [How I Dockerized and Deployed a Flask App on AWS](https://dev.to/tanayjdev/from-zero-to-deployment-dockerizing-a-flask-postgresql-app-on-aws-20go)
 - [How I Added CI/CD to My Docker App](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
 - [How I Built 5 Linux Automation Scripts on AWS EC2](https://dev.to/tanayjdev/how-i-built-5-linux-automation-scripts-on-aws-ec2-3pk4)
@@ -112,4 +119,4 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/tanay-jain-321617375)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/tanayjdev)
-[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=flat&logo=devdotto&logoColor=white)](https://dev.to/tj2905)
+[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=flat&logo=devdotto&logoColor=white)](https://dev.to/tanayjdev)
