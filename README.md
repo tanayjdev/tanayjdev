@@ -6,27 +6,35 @@
 
 ## About Me
 
-I build real cloud and DevOps systems — not tutorials, actual infrastructure.
+I'm a BCA student focused on Cloud and DevOps engineering, building hands-on cloud infrastructure and DevOps projects inspired by real production workflows.
 
-- Deployed containerized apps on AWS EC2 with Docker + Docker Compose
-- Built 5 production automation scripts on real Ubuntu server
-- CI/CD pipelines with GitHub Actions running on every push
+Highlights:
 
+- Built an end-to-end GitHub Actions CI/CD pipeline
+- Automated deployments from GitHub to AWS
+- Deployed Dockerized Flask applications on AWS
+- Developed Linux automation scripts on Ubuntu EC2
+- Currently learning Kubernetes and Terraform
+  
 ---
 
 ## Tech Stack
 
-**Working With:**
+### Working With
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat&logo=amazonaws&logoColor=white)
+![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-FF9900?style=flat&logo=amazonaws&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 
-**Learning Next:**
+### Learning Next
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
@@ -35,34 +43,62 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 ## Featured Projects
 
-### Flask + PostgreSQL — AWS Production Deployment (v2.0)
-- 3-tier architecture — EC2, Amazon RDS PostgreSQL, Application Load Balancer
-- Custom VPC with public and private subnets across multiple Availability Zones
-- Security Group layering — ALB → EC2 → RDS
-- CloudWatch dashboards monitoring EC2, RDS, and ALB metrics
-- IAM roles with least-privilege access
-- Dockerized Flask application with health check endpoint
+### 🚀 Flask + PostgreSQL — Production CI/CD on AWS (v3.0)
 
-🔗 [tanayjdev/flask-docker-app](https://github.com/tanayjdev/flask-docker-app)
+A production-style cloud deployment demonstrating an end-to-end CI/CD pipeline on AWS.
+
+**Highlights**
+
+- Automated GitHub Actions CI/CD pipeline (Lint → Test → Build → Deploy)
+- Flake8 code quality checks and Pytest unit testing
+- Docker Buildx with dependency and layer caching
+- Amazon ECR as the private container registry
+- Automatic deployment to AWS EC2 over SSH
+- Docker health checks to verify every deployment
+- Slack deployment notifications with GitHub Step Summary
+- Matrix builds across multiple Python versions
+- Reusable workflows and composite GitHub Actions
+- Zero-touch deployment pipeline from GitHub to AWS
+
+**Technologies:** Python, Flask, PostgreSQL, Docker, GitHub Actions, Amazon ECR, AWS EC2
+
+🔗 **Repository:** https://github.com/tanayjdev/flask-docker-app
 
 ---
 
-### AWS Automation Scripts
-- EC2 + S3 resource monitoring via boto3
-- Website health checker with requests
-- Combined DevOps monitor — AWS + HTTP in one report
+### ⚙️ AWS Automation Scripts
 
-🔗 [tanayjdev/aws-automation](https://github.com/tanayjdev/aws-automation)
+Automation scripts built using Python and boto3 for common AWS administration tasks.
+
+**Highlights**
+
+- EC2 and S3 resource monitoring
+- Website availability and health monitoring
+- Combined AWS + HTTP infrastructure monitoring
+- Automated reporting using Python
+
+**Technologies:** Python, boto3, AWS EC2, Amazon S3
+
+🔗 **Repository:** https://github.com/tanayjdev/aws-automation
 
 ---
 
-### Linux Bash Automation Scripts
-- 5 production scripts: health check, disk alerter, 
-  log cleaner, user creation, backup with verification
-- Cron scheduled — runs automatically 24/7
-- Built and tested on real AWS EC2 Ubuntu server
+### 🐧 Linux Bash Automation Scripts
 
-🔗 [tanayjdev/linux-bash-scripts](https://github.com/tanayjdev/linux-bash-scripts)
+A collection of Bash automation utilities built and tested on an Ubuntu AWS EC2 server.
+
+**Highlights**
+
+- System health monitoring
+- Disk usage alerts
+- Automated log cleanup
+- User creation automation
+- Backup with verification
+- Cron-based scheduled execution
+
+**Technologies:** Bash, Linux, Cron, AWS EC2
+
+🔗 **Repository:** https://github.com/tanayjdev/linux-bash-scripts
 
 ---
 
@@ -80,18 +116,15 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 ---
 
-## Current Focus (June 2026)
+## Current Focus
 
-- AWS IAM — roles, policies, least privilege
-- EC2 — instances, AMIs, EBS, snapshots
-- S3 — versioning, lifecycle, static website
-- VPC — custom networking, subnets, routing
-- RDS — managed PostgreSQL deployment
-- CloudWatch — monitoring, alarms, dashboards
-- ALB — load balancing, health checks
-- Terraform — infrastructure as code intro
-- Next: Terraform deep dive + Kubernetes
-
+- Kubernetes — container orchestration and production deployments
+- Terraform — infrastructure as code (IaC)
+- Helm — Kubernetes package management
+- GitOps workflows and deployment automation
+- Monitoring and observability for cloud-native applications
+- Building production-ready cloud infrastructure on AWS
+  
 ---
 
 ## Certifications Roadmap
@@ -108,6 +141,9 @@ I build real cloud and DevOps systems — not tutorials, actual infrastructure.
 
 [![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=flat&logo=devdotto&logoColor=white)](https://dev.to/tanayjdev)
 
+I document every major project I build—from cloud infrastructure and Docker to CI/CD and automation—sharing both the implementation and the lessons learned.
+
+- [From Manual Deployments to Production-Style CI/CD on AWS](https://dev.to/tanayjdev/from-manual-deployments-to-production-style-cicd-building-an-automated-flask-pipeline-with-github-21ch)
 - [How I Deployed a Flask App on AWS with RDS, ALB, and VPC](https://dev.to/tanayjdev/how-i-deployed-a-flask-app-on-aws-with-rds-alb-and-vpc-as-a-student-9ld)
 - [How I Dockerized and Deployed a Flask App on AWS](https://dev.to/tanayjdev/from-zero-to-deployment-dockerizing-a-flask-postgresql-app-on-aws-20go)
 - [How I Added CI/CD to My Docker App](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
