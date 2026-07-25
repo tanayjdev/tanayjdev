@@ -7,9 +7,7 @@
 
 
 <p align="center">
-
-  <img src="https://komarev.com/ghpvc/?username=tanayjdev&label=Profile%20Views&color=2088FF&style=flat" />
-
+  <img src="https://komarev.com/ghpvc/?username=tanayjdev&label=Profile%20Views&color=2088FF&style=for-the-badge" />
 </p>
 
 
