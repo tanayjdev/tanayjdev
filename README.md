@@ -1,351 +1,169 @@
-# Hey, I'm Tanay 👋
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:1a1a2e&height=280&section=header&text=Tanay%20Jain&fontSize=60&fontColor=FF9900&fontAlignY=35&animation=fadeIn&desc=Cloud%20%26%20DevOps%20%7C%20AWS%20%7C%20Infrastructure%20as%20Code&descSize=20&descAlignY=55" width="100%"/>
 
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=2088FF&center=true&vCenter=true&width=800&lines=Cloud+%26+DevOps+Engineer+in+Training;Building+Cloud+Automation+Projects;AWS+%7C+Docker+%7C+GitHub+Actions+%7C+Kubernetes;Learning+by+Building+Real+Systems)](https://git.io/typing-svg)
-
-
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=tanayjdev&label=Profile%20Views&color=2088FF&style=for-the-badge" />
+<p>
+<a href="https://github.com/tanayjdev">GitHub</a>
+&nbsp;•&nbsp;
+<a href="https://linkedin.com/in/tanayjdev">LinkedIn</a>
+&nbsp;•&nbsp;
+<a href="https://dev.to/tanayjdev">Dev.to</a>
 </p>
 
-
+</div>
 
 ---
-
-
 
 ## 🚀 About Me
 
+I'm a BCA student building **production-style Cloud & DevOps systems independently** — one real project at a time, not one tutorial at a time.
 
+I work across **Infrastructure as Code, AWS, CI/CD, containers, configuration management, and infrastructure automation**.
 
-I'm a BCA student building Cloud & DevOps projects focused on automated CI/CD pipelines, containerized applications, and cloud infrastructure. My projects automate Docker builds, publish images to Amazon ECR, deploy to AWS EC2 using GitHub Actions, and explore Kubernetes deployment workflows.
+My current work includes **Terraform, GitHub Actions, Docker, Ansible, AWS SSM, Python, and Bash**.
 
+I focus on understanding **why systems are designed the way they are**, not just making them work.
 
-
-I document what I build and what breaks along the way — see Technical Writing below.
-
-
-
----
-
-
-
-## ⚡ Tech Stack
-
-
-
-<p align="center">
-
-
-
-[![My Skills](https://skillicons.dev/icons?i=python,docker,kubernetes,terraform,aws,linux,bash,git,github,postgresql&theme=dark)](https://skillicons.dev)
-
-
-
-</p>
-
-
-
-**Core Technologies**
-
-
-
-- Python
-
-- Linux
-
-- Bash
-
-- Git & GitHub
-
-- Docker
-
-- Docker Compose
-
-- PostgreSQL
-
-- GitHub Actions
-
-- AWS EC2
-
-- Amazon ECR
-
-- Kubernetes
-
-
-
-**Currently Learning**
-
-
-
-- Terraform
-
-- Helm
-
-- AWS EKS
-
-- GitOps
-
-- Monitoring & Observability
-
-
+I document what I build, what breaks, and the engineering decisions behind it.
 
 ---
 
+## ⚡ Core Stack
 
+<div align="center">
 
-## 🌟 Featured Projects
+<img src="https://skillicons.dev/icons?i=aws,terraform,docker,ansible,python,linux,bash,git,github,postgresql&theme=dark" />
 
+</div>
 
+| Area | Technologies |
+|---|---|
+| **Infrastructure as Code** | Terraform, Packer |
+| **Cloud** | AWS — EC2, RDS, ALB, VPC, IAM, CloudWatch, Secrets Manager, SSM |
+| **Configuration Management** | Ansible over AWS SSM |
+| **Containers** | Docker, Docker Compose |
+| **CI/CD** | GitHub Actions, OIDC federation |
+| **Languages** | Python, Bash |
+| **Database** | PostgreSQL |
+| **Operating Systems** | Linux / Ubuntu |
 
-### 🚀 Flask + PostgreSQL — Production-style CI/CD on AWS
+---
 
+# 🏗️ Flagship Projects
 
+## 01 · Terraform IaC Platform
 
-🔗 **Repository:** [flask-docker-app](https://github.com/tanayjdev/flask-docker-app)
+**[→ View Repository](https://github.com/tanayjdev/terraform-lab)**
 
+A modular Terraform platform that turns manually assembled AWS infrastructure into a **repeatable, OIDC-authenticated, zero-SSH Infrastructure-as-Code system**.
 
+### Highlights
 
-An end-to-end DevOps project demonstrating an automated CI/CD pipeline that lints, tests, builds Docker images, publishes them to Amazon ECR, and deploys them to AWS EC2 with health verification and zero manual deployment steps.
+- Modular Terraform — VPC, ALB, ASG, and RDS
+- Remote state — S3 + DynamoDB locking
+- OIDC-based GitHub Actions CI — zero long-lived AWS credentials
+- Packer-built AMIs — immutable EC2 compute baseline
+- Ansible over AWS SSM — zero SSH dependency
+- AWS Secrets Manager — no hardcoded database credentials
+- Dev/prod replication from a single codebase
+- Plan-diff parity checks for environment consistency
+- Terraform import for pre-existing AWS resources
 
+**Stack:** `Terraform` · `Packer` · `Ansible` · `AWS` · `GitHub Actions` · `OIDC` · `Docker`
 
+---
 
-**Highlights**
+## 02 · Flask + PostgreSQL CI/CD on AWS
 
+**[→ View Repository](https://github.com/tanayjdev/flask-docker-app)**
 
+An end-to-end DevOps project demonstrating a **3-tier AWS deployment** with automated build, publishing, deployment, and health verification.
 
-- GitHub Actions CI/CD pipeline (lint → test → build → deploy)
+### Highlights
 
+- GitHub Actions — lint → test → build → deploy → verify
 - Docker Buildx with layer caching
-
 - Amazon ECR image publishing
+- Automated EC2 deployment with health verification
+- Custom VPC with public/private subnets
+- PostgreSQL RDS in a private subnet
+- Application Load Balancer with health-check logic
+- CloudWatch dashboards across EC2, RDS, and ALB
 
-- Automatic AWS EC2 deployment over SSH
-
-- Docker health checks after every deploy
-
-- Slack deployment notifications + GitHub Step Summary
-
-- Matrix builds and reusable workflows
-
-- Kubernetes deployment manifests
-
-
-
-**Stack:** Python • Flask • PostgreSQL • Docker • GitHub Actions • AWS EC2 • Amazon ECR • Kubernetes
-
-
+**Stack:** `Python` · `Flask` · `PostgreSQL` · `Docker` · `GitHub Actions` · `EC2` · `RDS` · `ALB` · `ECR`
 
 ---
 
+## 🧰 Supporting Work
 
+### ☁️ AWS Automation
 
-### ☁️ AWS Automation Scripts
+**[aws-automation](https://github.com/tanayjdev/aws-automation)**
 
-
-
-🔗 **Repository:** [aws-automation](https://github.com/tanayjdev/aws-automation)
-
-
-
-Python scripts built with boto3 for AWS administration and infrastructure monitoring.
-
-
-
-**Highlights**
-
-
-
-- EC2 and S3 monitoring
-
-- Website uptime monitoring
-
-- Automated infrastructure reporting
-
-
-
----
-
-
+Python + boto3 automation for AWS administration and infrastructure monitoring, including EC2/S3 checks, website uptime monitoring, and combined reporting.
 
 ### 🐧 Linux Bash Automation
 
+**[linux-bash-scripts](https://github.com/tanayjdev/linux-bash-scripts)**
 
+Five production-oriented Bash scripts built and tested on a real Ubuntu EC2 server:
 
-🔗 **Repository:** [linux-bash-scripts](https://github.com/tanayjdev/linux-bash-scripts)
+`Health Monitoring` · `Disk Alerts` · `Log Cleanup` · `User Provisioning` · `Verified Backups`
 
-
-
-Automation utilities built and tested on a real Ubuntu EC2 server.
-
-
-
-**Highlights**
-
-
-
-- System health monitoring and disk usage alerts
-
-- Automated log cleanup and verified backups
-
-- User creation automation
-
-- Cron-based scheduled execution
-
-
+Cron-scheduled and running automatically.
 
 ---
 
+## 🧭 Current Focus
 
+Going deeper into **container orchestration and platform engineering**:
 
-## 📈 GitHub Analytics
-
-
-
-<p align="center">
-
-
-
-<img width="85%" src="https://github-readme-streak-stats.herokuapp.com/?user=tanayjdev&theme=tokyonight&hide_border=true"/>
-
-
-
-</p>
-
-
-
-<p align="center">
-
-
-
-<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=tanayjdev&theme=tokyo-night&hide_border=true"/>
-
-
-
-</p>
-
-
+`Kubernetes` · `Helm` · `AWS EKS` · `GitOps` · `Monitoring & Observability`
 
 ---
-
-
-
-## 🚧 Currently Building
-
-
-
-I'm currently expanding my Cloud & DevOps skill set through hands-on projects involving:
-
-
-
-- Terraform (Infrastructure as Code)
-
-- Helm and AWS EKS
-
-- GitOps workflows
-
-- Monitoring & Observability
-
-- Platform Engineering
-
-
-
----
-
-
 
 ## ✍️ Technical Writing
 
+I document major projects with implementation details, real failures, and the engineering lessons behind them.
 
+- [**A Month of Building Real Infrastructure as Code — Terraform, Packer, and Ansible**](https://dev.to/tanayjdev/a-month-of-building-real-infrastructure-as-code-terraform-packer-and-ansible-2li0)
+- [**From Manual Deployments to Production-Style CI/CD on AWS**](https://dev.to/tanayjdev/from-manual-deployments-to-production-style-cicd-building-an-automated-flask-pipeline-with-github-21ch)
+- [**How I Deployed a Flask App on AWS with RDS, ALB & VPC**](https://dev.to/tanayjdev/how-i-deployed-a-flask-app-on-aws-with-rds-alb-and-vpc-as-a-student-9ld)
+- [**My CI Pipeline Failed on the First Push — Here's What I Learned**](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
+- [**How I Built 5 Linux Automation Scripts on AWS EC2**](https://dev.to/tanayjdev/how-i-built-5-linux-automation-scripts-on-aws-ec2-3pk4)
 
-I document every major project I build, including implementation details, lessons learned, and deployment challenges.
-
-
-
-- [From Manual Deployments to Production-Style CI/CD on AWS](https://dev.to/tanayjdev/from-manual-deployments-to-production-style-cicd-building-an-automated-flask-pipeline-with-github-21ch)
-
-- [How I Deployed a Flask App on AWS with RDS, ALB & VPC](https://dev.to/tanayjdev/how-i-deployed-a-flask-app-on-aws-with-rds-alb-and-vpc-as-a-student-9ld)
-
-- [Dockerizing and Deploying a Flask App on AWS](https://dev.to/tanayjdev/from-zero-to-deployment-dockerizing-a-flask-postgresql-app-on-aws-20go)
-
-- [My CI Pipeline Failed on the First Push — Here's What I Learned](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
-
-- [How I Built 5 Linux Automation Scripts on AWS EC2](https://dev.to/tanayjdev/how-i-built-5-linux-automation-scripts-on-aws-ec2-3pk4)
-
-
-
-More at [dev.to/tanayjdev](https://dev.to/tanayjdev).
-
-
+**More:** [dev.to/tanayjdev](https://dev.to/tanayjdev)
 
 ---
 
+## 🏆 Certification Roadmap
 
-
-## 🏆 Learning Roadmap
-
-
-
-| Goal | Target |
-
-|------|--------|
-
-| Terraform Associate | Sept 2026 |
-
-| Certified Kubernetes Administrator (CKA) | Jan 2027 |
-
-| AWS DevOps Engineer Professional | Aug 2027 |
-
-
+| Certification | Target | Status |
+|---|---|---|
+| HashiCorp Terraform Associate | Sept 2026 | 🟡 Preparing |
+| Certified Kubernetes Administrator (CKA) | Jan 2027 | 🔵 Starting |
+| AWS DevOps Engineer Professional | Aug 2027 | ⚪ Planned |
 
 ---
-
-
 
 ## 🤝 Connect
 
+Open to discussing **Cloud, DevOps, automation, infrastructure, and internship opportunities**.
 
-
-I'm always open to discussing Cloud, DevOps, automation, or internship opportunities.
-
-
-
-<p align="left">
-
-
+<div align="center">
 
 <a href="https://linkedin.com/in/tanayjdev">
-
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-
 </a>
-
-
 
 <a href="https://github.com/tanayjdev">
-
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-
 </a>
-
-
 
 <a href="https://dev.to/tanayjdev">
-
 <img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"/>
-
 </a>
 
+</div>
 
-
-</p>
-
-
-
-- **Email:** *tanayj489@gmail.com*
-
-
-
-If you're hiring for anything Cloud/DevOps-adjacent, or just want to talk about the same, my inbox is open.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0D1117&height=150&section=footer" width="100%"/>
