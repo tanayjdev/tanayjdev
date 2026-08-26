@@ -1,13 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:1a1a2e&height=280&section=header&text=Tanay%20Jain&fontSize=60&fontColor=FF9900&fontAlignY=35&animation=fadeIn&desc=Cloud%20%26%20DevOps%20%7C%20AWS%20%7C%20Infrastructure%20as%20Code&descSize=20&descAlignY=55" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0D1117,100:1a1a2e&text=Tanay%20Jain&reversal=false&fontColor=FF9900&fontSize=60&fontAlignY=35&animation=fadeIn&desc=Cloud%20%20DevOps%20%7C%20AWS%20%7C%20Infrastructure%20as%20Code&descSize=20&descAlignY=55&fontAlign=50" width="100%"/>
 
 <p>
-<a href="https://github.com/tanayjdev">GitHub</a>
-&nbsp;•&nbsp;
-<a href="https://linkedin.com/in/tanayjdev">LinkedIn</a>
-&nbsp;•&nbsp;
-<a href="https://dev.to/tanayjdev">Dev.to</a>
+  Building repeatable infrastructure, automated delivery pipelines, and reliable cloud systems
 </p>
 
 </div>
@@ -16,7 +12,7 @@
 
 ## 🚀 About Me
 
-I'm a BCA student building **production-style Cloud & DevOps systems independently** — one real project at a time, not one tutorial at a time.
+I'm a BCA student building **production-style Cloud & DevOps systems independently** - one real project at a time, not one tutorial at a time.
 
 I work across **Infrastructure as Code, AWS, CI/CD, containers, configuration management, and infrastructure automation**.
 
@@ -39,7 +35,7 @@ I document what I build, what breaks, and the engineering decisions behind it.
 | Area | Technologies |
 |---|---|
 | **Infrastructure as Code** | Terraform, Packer |
-| **Cloud** | AWS — EC2, RDS, ALB, VPC, IAM, CloudWatch, Secrets Manager, SSM |
+| **Cloud** | AWS - EC2, RDS, ALB, VPC, IAM, CloudWatch, Secrets Manager, SSM |
 | **Configuration Management** | Ansible over AWS SSM |
 | **Containers** | Docker, Docker Compose |
 | **CI/CD** | GitHub Actions, OIDC federation |
@@ -59,12 +55,12 @@ A modular Terraform platform that turns manually assembled AWS infrastructure in
 
 ### Highlights
 
-- Modular Terraform — VPC, ALB, ASG, and RDS
-- Remote state — S3 + DynamoDB locking
-- OIDC-based GitHub Actions CI — zero long-lived AWS credentials
-- Packer-built AMIs — immutable EC2 compute baseline
-- Ansible over AWS SSM — zero SSH dependency
-- AWS Secrets Manager — no hardcoded database credentials
+- Modular Terraform - VPC, ALB, ASG, and RDS
+- Remote state - S3 + DynamoDB locking
+- OIDC-based GitHub Actions CI - zero long-lived AWS credentials
+- Packer-built AMIs - immutable EC2 compute baseline
+- Ansible over AWS SSM - zero SSH dependency
+- AWS Secrets Manager - no hardcoded database credentials
 - Dev/prod replication from a single codebase
 - Plan-diff parity checks for environment consistency
 - Terraform import for pre-existing AWS resources
@@ -81,7 +77,7 @@ An end-to-end DevOps project demonstrating a **3-tier AWS deployment** with auto
 
 ### Highlights
 
-- GitHub Actions — lint → test → build → deploy → verify
+- GitHub Actions - lint → test → build → deploy → verify
 - Docker Buildx with layer caching
 - Amazon ECR image publishing
 - Automated EC2 deployment with health verification
