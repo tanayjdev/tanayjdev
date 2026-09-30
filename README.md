@@ -1,165 +1,222 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0D1117,100:1a1a2e&text=Tanay%20Jain&reversal=false&fontColor=FF9900&fontSize=60&fontAlignY=35&animation=fadeIn&desc=Cloud%20%20DevOps%20%7C%20AWS%20%7C%20Infrastructure%20as%20Code&descSize=20&descAlignY=55&fontAlign=50" width="100%"/>
+<img
+  src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0D1117,100:1a1a2e&text=Tanay%20Jain&reversal=false&fontColor=FF9900&fontSize=60&fontAlignY=35&animation=fadeIn&desc=Cloud%20%7C%20DevOps%20%7C%20Kubernetes%20%7C%20AWS&descSize=20&descAlignY=55&fontAlign=50"
+  width="100%"
+  alt="Tanay Jain — Cloud, DevOps, Kubernetes, AWS"
+  style="display: block; margin-bottom: 0;"
+/>
 
-<p>
-  Building repeatable infrastructure, automated delivery pipelines, and reliable cloud systems
+<p style="margin-top: 5px;">
+<strong>Building repeatable infrastructure, reliable delivery pipelines, and observable cloud-native systems.</strong>
 </p>
 
 </div>
 
----
-
-## 🚀 About Me
-
-I'm a BCA student building **production-style Cloud & DevOps systems independently** - one real project at a time, not one tutorial at a time.
-
-I work across **Infrastructure as Code, AWS, CI/CD, containers, configuration management, and infrastructure automation**.
-
-My current work includes **Terraform, GitHub Actions, Docker, Ansible, AWS SSM, Python, and Bash**.
-
-I focus on understanding **why systems are designed the way they are**, not just making them work.
-
-I document what I build, what breaks, and the engineering decisions behind it.
 
 ---
 
-## ⚡ Core Stack
+## 👋 About Me
+
+I'm a BCA student focused on **Cloud, DevOps, Kubernetes, and Infrastructure Engineering**.
+
+I learn by building real systems, deliberately breaking them, debugging failures from evidence, and documenting what I find.
+
+My work spans:
+
+**AWS · Terraform · Kubernetes · Docker · GitHub Actions · Ansible · Python · Bash · PostgreSQL**
+
+I care about understanding **why systems behave the way they do**, not just getting them to work.
+
+> **Build → Break → Diagnose → Recover → Document**
+---
+
+## 🎯 Current Focus
+
+Going deeper into:
+
+`Kubernetes Failure Engineering` · `Helm` · `AWS EKS` · `GitOps` · `Observability`
+
+Current direction:
+
+**Kubernetes → Helm → EKS → GitOps → Platform Engineering**
+
+---
+
+## 🧰 Technologies I Work With
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=aws,terraform,docker,ansible,python,linux,bash,git,github,postgresql&theme=dark" />
+<img
+  src="https://skillicons.dev/icons?i=aws,terraform,kubernetes,docker,ansible,python,linux,bash,git,github,postgresql&theme=dark"
+  alt="Technologies: AWS, Terraform, Kubernetes, Docker, Ansible, Python, Linux, Bash, Git, GitHub, PostgreSQL"
+/>
 
 </div>
 
 | Area | Technologies |
 |---|---|
+| **Cloud** | AWS — EC2, RDS, ALB, VPC, IAM, CloudWatch, Secrets Manager |
 | **Infrastructure as Code** | Terraform, Packer |
-| **Cloud** | AWS - EC2, RDS, ALB, VPC, IAM, CloudWatch, Secrets Manager, SSM |
-| **Configuration Management** | Ansible over AWS SSM |
-| **Containers** | Docker, Docker Compose |
-| **CI/CD** | GitHub Actions, OIDC federation |
+| **Containers & Orchestration** | Docker, Docker Compose, Kubernetes, kind |
+| **CI/CD** | GitHub Actions, OIDC |
+| **Configuration & Remote Management** | Ansible, AWS Systems Manager |
 | **Languages** | Python, Bash |
 | **Database** | PostgreSQL |
 | **Operating Systems** | Linux / Ubuntu |
 
 ---
 
-# 🏗️ Flagship Projects
+## 🏗️ Flagship Projects
 
-## 01 · Terraform IaC Platform
+### 01 · Kubernetes Failure Engineering Capstone
+
+**[→ View Repository](https://github.com/tanayjdev/k8s-flask-devops-capstone)**
+
+**Sept 2026 · Completed**
+
+A containerized Flask + PostgreSQL application on a local multi-node `kind` cluster, built as an **evidence-driven Kubernetes debugging and failure-engineering environment**.
+
+#### Highlights
+
+- Flask Deployment — 2 replicas
+- PostgreSQL Deployment — 1 replica
+- Kubernetes Services + EndpointSlice-based debugging
+- ConfigMap + Secret configuration
+- Dependency-aware `/health` readiness
+- Verified liveness + startup probes
+- PostgreSQL PersistentVolumeClaim
+- Dedicated ServiceAccount with `automountServiceAccountToken: false`
+- Deliberate failures across configuration, routing, dependencies, authentication, readiness, storage, scheduling, RBAC, and infrastructure
+- Reproducible rebuild verified in isolated namespace `sep28-repro`
+
+**Stack:** `Kubernetes` · `kind` · `Flask` · `PostgreSQL` · `Docker`
+
+---
+
+### 02 · Terraform IaC Platform
 
 **[→ View Repository](https://github.com/tanayjdev/terraform-lab)**
 
-A modular Terraform platform that turns manually assembled AWS infrastructure into a **repeatable, OIDC-authenticated, zero-SSH Infrastructure-as-Code system**.
+**Aug 2026 · Completed**
 
-### Highlights
+A modular Terraform platform for repeatable AWS infrastructure and automated environment provisioning.
 
-- Modular Terraform - VPC, ALB, ASG, and RDS
-- Remote state - S3 + DynamoDB locking
-- OIDC-based GitHub Actions CI - zero long-lived AWS credentials
-- Packer-built AMIs - immutable EC2 compute baseline
-- Ansible over AWS SSM - zero SSH dependency
-- AWS Secrets Manager - no hardcoded database credentials
-- Dev/prod replication from a single codebase
-- Plan-diff parity checks for environment consistency
-- Terraform import for pre-existing AWS resources
+#### Highlights
 
-**Stack:** `Terraform` · `Packer` · `Ansible` · `AWS` · `GitHub Actions` · `OIDC` · `Docker`
+- Modular Terraform — VPC, ALB, ASG, RDS
+- Remote state using S3 + DynamoDB locking
+- GitHub Actions with OIDC-based AWS authentication
+- Packer-built AMIs
+- Ansible over AWS SSM
+- AWS Secrets Manager integration
+- Dev/prod environment replication
+- Terraform import and infrastructure parity checks
+
+**Stack:** `Terraform` · `Packer` · `Ansible` · `AWS` · `GitHub Actions` · `OIDC`
 
 ---
 
-## 02 · Flask + PostgreSQL CI/CD on AWS
+### 03 · Flask + PostgreSQL CI/CD on AWS
 
 **[→ View Repository](https://github.com/tanayjdev/flask-docker-app)**
 
-An end-to-end DevOps project demonstrating a **3-tier AWS deployment** with automated build, publishing, deployment, and health verification.
+**Jul 2026 · Completed**
 
-### Highlights
+An end-to-end AWS deployment demonstrating automated application delivery, container publishing, infrastructure integration, and health verification.
 
-- GitHub Actions - lint → test → build → deploy → verify
+#### Highlights
+
+- GitHub Actions — lint → test → build → deploy → verify
 - Docker Buildx with layer caching
 - Amazon ECR image publishing
-- Automated EC2 deployment with health verification
-- Custom VPC with public/private subnets
-- PostgreSQL RDS in a private subnet
-- Application Load Balancer with health-check logic
-- CloudWatch dashboards across EC2, RDS, and ALB
+- EC2 deployment automation
+- Custom VPC
+- PostgreSQL RDS
+- Application Load Balancer
+- CloudWatch monitoring
 
-**Stack:** `Python` · `Flask` · `PostgreSQL` · `Docker` · `GitHub Actions` · `EC2` · `RDS` · `ALB` · `ECR`
+**Stack:** `Flask` · `PostgreSQL` · `Docker` · `GitHub Actions` · `EC2` · `RDS` · `ALB` · `ECR`
 
 ---
 
-## 🧰 Supporting Work
+## 🧰 Additional Work
 
 ### ☁️ AWS Automation
 
 **[aws-automation](https://github.com/tanayjdev/aws-automation)**
 
-Python + boto3 automation for AWS administration and infrastructure monitoring, including EC2/S3 checks, website uptime monitoring, and combined reporting.
+Python + boto3 automation for AWS administration, infrastructure checks, uptime monitoring, and reporting.
 
-### 🐧 Linux Bash Automation
+### 🐧 Linux Automation
 
 **[linux-bash-scripts](https://github.com/tanayjdev/linux-bash-scripts)**
 
-Five production-oriented Bash scripts built and tested on a real Ubuntu EC2 server:
-
-`Health Monitoring` · `Disk Alerts` · `Log Cleanup` · `User Provisioning` · `Verified Backups`
-
-Cron-scheduled and running automatically.
-
----
-
-## 🧭 Current Focus
-
-Going deeper into **container orchestration and platform engineering**:
-
-`Kubernetes` · `Helm` · `AWS EKS` · `GitOps` · `Monitoring & Observability`
+Bash automation for system health monitoring, disk alerts, log cleanup, user provisioning, and verified backups.
 
 ---
 
 ## ✍️ Technical Writing
 
-I document major projects with implementation details, real failures, and the engineering lessons behind them.
+I document the systems I build, the failures I reproduce, and the engineering decisions behind them.
 
-- [**A Month of Building Real Infrastructure as Code — Terraform, Packer, and Ansible**](https://dev.to/tanayjdev/a-month-of-building-real-infrastructure-as-code-terraform-packer-and-ansible-2li0)
-- [**From Manual Deployments to Production-Style CI/CD on AWS**](https://dev.to/tanayjdev/from-manual-deployments-to-production-style-cicd-building-an-automated-flask-pipeline-with-github-21ch)
-- [**How I Deployed a Flask App on AWS with RDS, ALB & VPC**](https://dev.to/tanayjdev/how-i-deployed-a-flask-app-on-aws-with-rds-alb-and-vpc-as-a-student-9ld)
-- [**My CI Pipeline Failed on the First Push — Here's What I Learned**](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
-- [**How I Built 5 Linux Automation Scripts on AWS EC2**](https://dev.to/tanayjdev/how-i-built-5-linux-automation-scripts-on-aws-ec2-3pk4)
+### Latest
+
+- **[Moving Beyond the Happy Path: Failure Engineering, EndpointSlices, and Kubernetes Debugging](https://dev.to/tanayjdev/moving-beyond-the-happy-path-failure-engineering-endpointslices-and-kubernetes-debugging-2nkk)**
+
+### Cloud & DevOps
+
+- [A Month of Building Real Infrastructure as Code — Terraform, Packer, and Ansible](https://dev.to/tanayjdev/a-month-of-building-real-infrastructure-as-code-terraform-packer-and-ansible-2li0)
+- [From Manual Deployments to Production-Style CI/CD on AWS](https://dev.to/tanayjdev/from-manual-deployments-to-production-style-cicd-building-an-automated-flask-pipeline-with-github-21ch)
+- [How I Deployed a Flask App on AWS with RDS, ALB & VPC](https://dev.to/tanayjdev/how-i-deployed-a-flask-app-on-aws-with-rds-alb-and-vpc-as-a-student-9ld)
+- [My CI Pipeline Failed on the First Push — Here's What I Learned](https://dev.to/tanayjdev/my-ci-pipeline-failed-on-the-first-push-heres-what-i-learned-5bjo)
+- [How I Built 5 Linux Automation Scripts on AWS EC2](https://dev.to/tanayjdev/how-i-built-5-linux-automation-scripts-on-aws-ec2-3pk4)
 
 **More:** [dev.to/tanayjdev](https://dev.to/tanayjdev)
 
 ---
 
-## 🏆 Certification Roadmap
+## 🧭 Learning Roadmap
 
 | Certification | Target | Status |
 |---|---|---|
-| HashiCorp Terraform Associate | Sept 2026 | 🟡 Preparing |
-| Certified Kubernetes Administrator (CKA) | Jan 2027 | 🔵 Starting |
-| AWS DevOps Engineer Professional | Aug 2027 | ⚪ Planned |
+| HashiCorp Terraform Associate | 2026 | 🟡 Preparing |
+| Certified Kubernetes Administrator (CKA) | 2027 | 🔵 Starting |
+| AWS DevOps Engineer Professional | 2027 | ⚪ Planned |
 
 ---
 
 ## 🤝 Connect
 
-Open to discussing **Cloud, DevOps, automation, infrastructure, and internship opportunities**.
+I'm interested in opportunities and conversations around **Cloud, DevOps, Kubernetes, and Infrastructure Engineering.**
 
 <div align="center">
 
 <a href="https://linkedin.com/in/tanayjdev">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  <img
+    src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+    alt="LinkedIn"
+  />
 </a>
 
 <a href="https://github.com/tanayjdev">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img
+    src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="GitHub"
+  />
 </a>
 
 <a href="https://dev.to/tanayjdev">
-<img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"/>
+  <img
+    src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"
+    alt="Dev.to"
+  />
 </a>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0D1117&height=150&section=footer" width="100%"/>
+<img
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0D1117&height=150&section=footer"
+  width="100%"
+  alt=""
+/>
