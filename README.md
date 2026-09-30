@@ -6,12 +6,12 @@
   alt="Tanay Jain — Cloud, DevOps, Kubernetes, AWS"
   style="display: block; margin-bottom: 0;"
 />
-
-<p style="margin-top: 5px;">
-<strong>Building repeatable infrastructure, reliable delivery pipelines, and observable cloud-native systems.</strong>
-</p>
+<h3>
+Building repeatable infrastructure, reliable delivery pipelines, and observable cloud-native systems.
+</h3>
 
 </div>
+
 
 
 ---
