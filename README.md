@@ -176,16 +176,6 @@ I document the systems I build, the failures I reproduce, and the engineering de
 
 ---
 
-## 🧭 Learning Roadmap
-
-| Certification | Target | Status |
-|---|---|---|
-| HashiCorp Terraform Associate | 2026 | 🟡 Preparing |
-| Certified Kubernetes Administrator (CKA) | 2027 | 🔵 Starting |
-| AWS DevOps Engineer Professional | 2027 | ⚪ Planned |
-
----
-
 ## 🤝 Connect
 
 I'm interested in opportunities and conversations around **Cloud, DevOps, Kubernetes, and Infrastructure Engineering.**
